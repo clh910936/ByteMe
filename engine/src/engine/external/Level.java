@@ -84,14 +84,26 @@ public class Level implements Serializable {
         myBackground = imageResource;
     }
 
+    /**
+     * Sets the horizontal length of the Game Level
+     * @param width
+     */
     public void setWidth(double width) {
         myWidth = width;
     }
 
+    /**
+     * Sets the vertical length of the Game Level
+     * @param height
+     */
     public void setHeight(double height) {
         myHeight = height;
     }
 
+    /**
+     * Sets the background music for the Game Level
+     * @param musicResource String argument used to retrieve the music file from database
+     */
     public void setMusic(String musicResource) {
         myMusic = musicResource;
     }
@@ -104,14 +116,23 @@ public class Level implements Serializable {
         return myBackground;
     }
 
+    /**
+     * @return String argument with which the background music could be retrieved from database
+     */
     public String getMusic() {
         return myMusic;
     }
 
+    /**
+     * @return horizontal length of the Game Level
+     */
     public Double getWidth() {
         return myWidth;
     }
 
+    /**
+     * @return vertical length of the Game Level
+     */
     public Double getHeight() {
         return myHeight;
     }
